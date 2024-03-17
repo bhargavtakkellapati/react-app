@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter'
+import Timer from './components/Calculation';
+import Useref from './components/Useref';
+import UseLayoutEffect from './components/UseLayoutEffect';
+import UseMemo from './components/UseMemo';
+import UseCallBack from'./components/ClickCounter';
+import Registration from './components/Registration';
+import Users from './components/Users';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>bhargav</h1>
+
+      {/* <Counter/>
+      <Timer/>
+      <Useref/>
+      < UseLayoutEffect/>
+      {/* <UseMemo/> */}
+      {/* <UseCallBack/> */} 
+      {/* <Registration/> */}
+      <Users/>
+
+      
     </div>
   );
 }
