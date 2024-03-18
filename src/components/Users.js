@@ -7,7 +7,7 @@ const Users = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [form] = Form.useForm();
-  const [isDetailsModalVisible, setIsDetailsModalVisible] = useState(false); // Define state for details modal visibility
+  const [isDetailsModalVisible, setIsDetailsModalVisible] = useState(false); 
 
   const getUsersList = async () => {
     try {
@@ -31,14 +31,14 @@ const Users = () => {
   const viewUserDetails = async (id) => {
     try {
       await getUserById(id);
-      setIsDetailsModalVisible(true); // Show details modal after fetching user details
+      setIsDetailsModalVisible(true);
     } catch (error) {
       console.error('Error fetching user details:', error);
     }
   };
 
   const handleCancelDetailsModal = () => {
-    setIsDetailsModalVisible(false); // Close details modal
+    setIsDetailsModalVisible(false); 
   };
 
   const deleteUser = async (id) => {
@@ -152,7 +152,7 @@ const UserDetailsModal = ({ visible, user, onClose }) => {
       <p>ID: {user ? user.id : ''}</p>
       <p>Name: {user ? user.firstName : ''}</p>
       <p>Email: {user ? user.email : ''}</p>
-      {/* Add more user details as needed */}
+     
     </Modal>
   );
 };
@@ -164,7 +164,7 @@ const UserForm = ({ onSubmit, initialValues, form }) => {
   };
 
   useEffect(() => {
-    form.setFieldsValue(initialValues); // Set form values when initialValues change
+    form.setFieldsValue(initialValues);   
   }, [initialValues, form]);
 
   return (
