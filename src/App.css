@@ -35,12 +35,16 @@ button {
 
 
 button {
+  
+
   background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  width: 60%;
+  margin-left: 3rem;
 }
 
 button:hover {
@@ -48,7 +52,7 @@ button:hover {
 }
 
 .product_table {
-  width: 100%;
+  width: 10%;
   border-collapse: collapse;
   margin-top: 20px;
 }
@@ -68,6 +72,7 @@ button:hover {
 .product_table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 
 .product_table tr:hover {
   background-color: #ddd;

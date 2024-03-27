@@ -7,6 +7,11 @@ import UseMemo from './components/UseMemo';
 import UseCallBack from'./components/ClickCounter';
 import Registration from './components/Registration';
 import Users from './components/Users';
+import RazorpayButton from './components/RazorpayButton';
+import RegistrationTable from './components/RegistrationTable'
+import RegistrationForm from './components/RegistrationForm';
+import { RegistrationContext } from './components/RegistrationContext';
+import RegistrationApiContext from './components/RegistrationApiContext';
 
 
 
@@ -24,6 +29,11 @@ function App() {
       {/* <UseCallBack/> */} 
       {/* <Registration/> */}
       <Users/>
+      {/* <RazorpayButton/> */}
+      {/* <RegistrationForm/>
+    <RegistrationTable/>
+    <RegistrationContext/> */}
+    {/* <RegistrationApiContext/> */}
 
       
     </div>
